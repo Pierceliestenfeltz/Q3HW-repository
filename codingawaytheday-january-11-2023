@@ -1,0 +1,20 @@
+
+class factoring{
+    int f(int n){
+        int result;
+        
+        if (n==1){
+            return 1;
+        }else{
+            result = f(n-1) * n;
+            return result;
+        }
+        }
+    }
+public class porch{
+    public static void main(String[] args){
+        factoring A = new factoring();
+        
+        System.out.println("The factorial of 3 is " + A.f(3));
+    }
+}
